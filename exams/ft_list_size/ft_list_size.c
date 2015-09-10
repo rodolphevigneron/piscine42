@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_list_size.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/29 11:41:06 by exam              #+#    #+#             */
-/*   Updated: 2015/08/29 11:59:31 by exam             ###   ########.fr       */
+/*   Updated: 2015/09/10 20:28:51 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,5 @@ int		ft_list_size(t_list *begin_list)
 			size++;
 		}
 	}
-	return (size);
+	return (size - 1);
 }
