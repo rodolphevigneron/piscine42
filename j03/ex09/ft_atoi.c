@@ -1,45 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrev.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/08/07 11:17:41 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/07 13:50:26 by glarivie         ###   ########.fr       */
+/*   Created: 2015/08/29 12:02:27 by glarivie          #+#    #+#             */
+/*   Updated: 2015/08/29 14:09:29 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	length;
-
-	length = 0;
-	while (str[length])
-		length++;
-	return (length);
-}
-
-char	*fr_strrev(char *str)
+int	ft_atoi(char *str)
 {
 	int		i;
 	int		j;
-	int		strlen;
-	
-	i = 0;
-	j = 0;
-	strlen = 0;
-	while (str[strlen])
-		i++;
-	i = i - 1;
-	while (i < strlen)
-	{
-		j = str[strlen];
-		str[strlen] = str[i];
-		str[i] = j;
-		i++;
-		j--;
-	}
+	int		ret;
 
-	return	(str);
+	i = 0;
+	j = 1;
+	ret = 0;
+	while ((str[i] != '\0')
+			&& ((str[i] >= '0' && str[i] <= '9')
+			|| str[i] == '-'
+			|| str[i] == '+'))
+		i++;
+	i--;
+	while (i >= 0)
+	{
+		ret += (str[i] - '0') * j;
+		i--;
+		j = j * 10;
+	}
+	return (ret);
 }
