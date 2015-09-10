@@ -28,7 +28,6 @@ void	ft_print_comb(void)
 				ft_putchar(count[0]);
 				ft_putchar(count[1]);
 				ft_putchar(count[2]);
-				
 				if (count[0] != '7')
 				{
 					ft_putchar(',');

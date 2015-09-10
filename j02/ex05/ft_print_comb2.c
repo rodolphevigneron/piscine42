@@ -12,7 +12,7 @@
 
 void	ft_putchar(char c);
 
-void	ft_add_comma(void)
+void	ft_add_comma(int count[2])
 {
 	if (count[0] == 98 && count[1] == 99)
 	{
@@ -44,7 +44,7 @@ void	ft_print_comb2(void)
 		count[1] = count[0] + 1;
 		while (count[1] <= 99)
 		{
-			ft_add_comma();
+			ft_add_comma(count);
 			count[1]++;
 		}
 		count[0]++;

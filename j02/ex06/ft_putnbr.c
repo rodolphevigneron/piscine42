@@ -10,13 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void    ft_putchar(char c);
 
-void    ft_putchar(char c)
+int	ft_int_length(int nb)
 {
-	write(1, &c, 1);
+	int	length;
+	int	div;
+
+	length = 0;
+	div = 1;
+	while ((nb / div) != 0)
+	{
+		length++;
+		div = div * 10;
+	}
+	return (length);
 }
 
 void	ft_putnbr(int nb)
 {
+	int	length;
+	int	div;
 
+	length = ft_int_length(nb);
+	div = 1;
+	while (--length > 0)
+		div = div * 10;
+	if (nb < 0)
+	{
+		nb = -nb;
+		ft_putchar('-');
+	}
+	while (div > 0)
+	{
+		ft_putchar(nb / div % 10 + '0');
+		div = div / 10;
+	}
+}
