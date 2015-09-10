@@ -10,21 +10,28 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strlen(char *str)
+{
+	int	length;
+
+	length = 0;
+	while (str[length])
+		length++;
+	return (length);
+}
+
 char	*fr_strrev(char *str)
 {
-	int		i;			/* compteur */
-	int		j;			/* valeur tmp */
-	int		strlen;		/* taille de la chaine */
+	int		i;
+	int		j;
+	int		strlen;
 	
 	i = 0;
 	j = 0;
 	strlen = 0;
-	while (str[i])
-	{
+	while (str[strlen])
 		i++;
-	}
-	i = i - 1;			/* on retire le caratere \0 */
-
+	i = i - 1;
 	while (i < strlen)
 	{
 		j = str[strlen];
