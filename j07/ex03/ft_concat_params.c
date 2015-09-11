@@ -3,32 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_concat_params.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/13 15:31:13 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/13 18:14:49 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 10:30:43 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
-
-void	ft_putstr(char *str)
-{
-	int	counter;
-
-	counter = 0;
-	while (str[counter])
-	{
-		ft_putchar(str[counter]);
-		counter++;
-	}
-}
 
 char	*ft_concat_params(int argc, char **argv)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/13 10:42:50 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/13 11:01:30 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 12:47:15 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,5 @@ int match(char *s1, char *s2);
 int		main(int argc, char **argv)
 {
 	printf("%d\n", match(argv[1], argv[2]));
-	
-	
 	return 0;
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_any.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/18 15:11:55 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/18 15:24:23 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 12:57:48 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		ft_any(char **tab, int (*f)(char*))
 			i++;
 		j++;
 	}
-	if (j > 0)
+	if (i > 0)
 		return (1);
 	else
 		return (0);

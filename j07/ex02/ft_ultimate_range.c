@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/13 13:45:28 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/13 14:22:54 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 09:16:53 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int		ft_ultimate_range(int **range, int min, int max)
 {
 	*range = ft_range(min, max);
 	if (min >= max)
-		return (0);
+		return (NULL);
 	else
 		return (max - min);
 }

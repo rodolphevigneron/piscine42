@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/13 12:09:13 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/14 22:43:49 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 09:13:41 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,10 @@ int		*ft_range(int min, int max)
 
 	i = 0;
 	if (min >= max)
-		return (0);
+		return (NULL);
 	else
 	{
-		int_tab = (int *)malloc(sizeof(*int_tab) * (max - min));
+		int_tab = (int *)malloc(sizeof(int) * (max - min));
 		while (i < max)
 		{
 			int_tab[i] = min + i;

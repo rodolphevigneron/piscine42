@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_sort_params.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/12 17:02:25 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/13 10:16:33 by glarivie         ###   ########.fr       */
+/*   Updated: 2015/09/11 09:10:14 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
-int		ft_array_compare(char *ar1, char *ar2);
-void	ft_array_print(char *ar);
-void	ft_array_swap(char *ar1, char *ar2);
 
 int		ft_array_compare(char *ar1, char *ar2)
 {

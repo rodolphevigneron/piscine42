@@ -1,33 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_params.c                                    :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: glarivie <glarivie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/08/12 15:44:07 by glarivie          #+#    #+#             */
-/*   Updated: 2015/09/11 08:34:06 by glarivie         ###   ########.fr       */
+/*   Created: 2015/08/13 10:42:50 by glarivie          #+#    #+#             */
+/*   Updated: 2015/09/11 12:49:30 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#include <stdio.h>
+
+int nmatch(char *s1, char *s2);
 
 int		main(int argc, char **argv)
 {
-	int		index;
-
-	argc--;
-	index = 0;
-	while (argc > 0)
-	{
-		while (argv[argc][index])
-		{
-			ft_putchar(argv[argc][index]);
-			index++;
-		}
-		ft_putchar('\n');
-		index = 0;
-		argc--;
-	}
-	return (0);
+	printf("%d\n", nmatch(argv[1], argv[2]));
+	return 0;
 }
