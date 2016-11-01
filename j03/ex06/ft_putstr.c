@@ -6,7 +6,7 @@
 /*   By: glarivie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/08/07 10:04:05 by glarivie          #+#    #+#             */
-/*   Updated: 2015/08/07 10:54:03 by glarivie         ###   ########.fr       */
+/*   Updated: 2016/11/01 20:57:55 by glarivie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@ void	ft_putchar(char c);
 
 void	ft_putstr(char *str)
 {
-		int	i;
-		
-		i = -1;
-		while (str[++i])
-			ft_putchar(str[i]);
+	int	i;
+
+	i = -1;
+	while (str[++i])
+		ft_putchar(str[i]);
 }
